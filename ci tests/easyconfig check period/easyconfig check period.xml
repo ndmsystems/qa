@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<test name="easyconfig check period" groups="mobile">
+  <body>
+    <packet>
+      <request><command cmd="easyconfig check period">
+        <period>15</period>
+      </command>
+        <assert type="tag" name="message" value="a new check period set to .* seconds" />
+        <assert type="tag" name="argument" value="15" />
+      </request>
+    </packet>
+  </body>
+</test>

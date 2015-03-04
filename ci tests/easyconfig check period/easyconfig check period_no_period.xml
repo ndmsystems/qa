@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<test name="easyconfig check period. No period" groups="mobile">
+  <body>
+    <packet>
+      <request><command cmd="easyconfig check period">
+      </command>
+        <assert type="error" code="7471107" />
+      </request>
+    </packet>
+  </body>
+</test>

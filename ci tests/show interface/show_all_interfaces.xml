@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<test name="show interface all" groups="mobile">
+  <body>
+    <packet>
+      <request><command cmd="show interface"></command>
+        <assert type="tag" name="interface" />
+        <assert type="xpath" path="//interface/id" value="Switch0" />
+      </request>
+    </packet>
+  </body>
+</test>
