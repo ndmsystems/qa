@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<test name="interface port access" groups="mobile">
+  <body>
+    <packet>
+      <request><command cmd="interface port access">
+        <name>Switch0</name>
+        <port>2</port>
+        <vid>2</vid>
+      </command>
+        <assert type="tag" name="message" value=".* name added"/>
+      </request>
+      <request>
+      </request>
+    </packet>
+  </body>
+</test>
+
+

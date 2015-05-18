@@ -3,7 +3,7 @@
   <body>
     <packet>
       <request><command cmd="easyconfig check host">
-        <address>google.com</address>
+        <address >google.com</address>
       </command>
         <assert type="tag" name="message" value=".* name added"/>
         <assert type="tag" name="argument" value="google.com"/>
