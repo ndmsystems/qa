@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<test name="interface ip address dhcp. Full. Positive" groups="mobile">
+  <setup>
+    <request>
+      <command name="interface">
+        <name>PPPoE2</name>
+      </command>
+    </request>
+  </setup>
+  <body>
+    <packet>
+      <request><command name="interface ip address dhcp">
+        <host>test-123</host>
+        <name>PPPoE</name>
+        </command>
+        <assert type="tag" name="error" exists="false" />
+        <assert type="tag" name="message" />
+      </request>
+    </packet>
+  </body>
+  <teardown>
+    <request>
+      <command name="interface">
+        <name>PPPoE2</name>
+        <no>no</no>
+      </command>
+    </request>
+  </teardown>
+</test>

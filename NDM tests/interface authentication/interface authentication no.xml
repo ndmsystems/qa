@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<test name="interface authentication. Full. Positive" groups="mobile">
+  <setup>
+    <packet>
+      <request id="0">
+        <command name="interface">
+          <name>PPPoE3</name>
+        </command>
+      </request>
+    </packet>
+  </setup>
+  <body>
+    <packet>
+      <request><command name="interface authentication">
+        <name>PPPoE3</name>
+        <no>no</no>
+      </command>
+        <assert type="tag" name="error" exists="false" />
+        <assert type="tag" name="message" value="Authentication settings cleared." />
+      </request>
+    </packet>
+  </body>
+</test>

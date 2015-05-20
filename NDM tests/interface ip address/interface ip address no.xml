@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<test name="interface ip address. No. Full. Positive" groups="mobile">
+
+  <setup>
+    <request>
+      <command name="interface">
+        <name>PPPoE2</name>
+      </command>
+    </request>
+  </setup>
+  <body>
+    <packet>
+      <request><command name="interface ip address">
+        <address>172.17.24.9</address>
+        <mask>255.255.255.0</mask>
+        <name>PPPoE2</name>
+        <no>no</no>
+        </command>
+        <assert type="tag" name="error" exists="false" />
+      </request>
+    </packet>
+  </body>
+  <teardown>
+    <request>
+      <command name="interface">
+        <name>PPPoE2</name>
+        <no>no</no>
+      </command>
+    </request>
+  </teardown>
+</test>

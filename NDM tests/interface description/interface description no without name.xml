@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<test name="interface ip global. No without name. Negative" groups="mobile">
+  <setup>
+    <request>
+      <command name="interface">
+        <name>PPPoE2</name>
+      </command>
+    </request>
+  </setup>
+  <body>
+    <packet>
+      <request><command name="interface description">
+        <description>PPPoE2</description>
+        <no>no</no>
+      </command>
+        <assert type="tag" name="error" />
+      </request>
+    </packet>
+  </body>
+  <teardown>
+    <request>
+      <command name="interface">
+        <name>PPPoE2</name>
+        <no>no</no>
+      </command>
+    </request>
+  </teardown>
+</test>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<test name="interface authentication. Full. Positive" groups="mobile">
+  <setup>
+    <request>
+      <command name="interface">
+        <name>PPPoE2</name>
+      </command>
+    </request>
+  </setup>
+  <body>
+    <packet>
+      <request><command name="interface authentication">
+        <name>PPoE3</name>
+      </command>
+        <assert type="tag" name="error" exists="false" />
+      </request>
+    </packet>
+  </body>
+</test>

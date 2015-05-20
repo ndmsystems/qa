@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<test name="interface ip address dhcp. Without name. Negative" groups="mobile">
+  <body>
+    <packet>
+      <request><command name="interface ip address dhcp">
+        <host>test-123</host>
+        </command>
+        <assert type="tag" name="error" />
+      </request>
+    </packet>
+  </body>
+</test>

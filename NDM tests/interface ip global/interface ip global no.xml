@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<test name="interface ip global. No. Full. Positive" groups="mobile">
+  <body>
+    <packet>
+      <request><command name="interface ip global">
+        <priority>700</priority>
+        <name>ISP</name>
+        <no>no</no>
+        </command>
+        <assert type="tag" name="error" exists="false" />
+      </request>
+    </packet>
+  </body>
+</test>

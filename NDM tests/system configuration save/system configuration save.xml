@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<test name="system configuration save" groups="mobile">
+  <environment>
+    <firmware>
+      <versions>2.06, 2.05</versions>
+    </firmware>
+  </environment>
+  <body>
+    <packet>
+      <request><command name="system configuration save"></command>
+        <assert type="tag" name="error" exists="false" />
+      </request>
+    </packet>
+  </body>
+</test>

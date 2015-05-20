@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<test name="interface mac address. Full. Positive" groups="mobile">
+  <body>
+    <packet>
+      <request><command name="interface mac address">
+        <mac>00:1e:e5:41:18:42</mac>
+        <name>ISP</name>
+        </command>
+        <assert type="tag" name="error" exists="false" />
+        <assert type="tag" name="message" value="MAC address saved." />
+      </request>
+    </packet>
+  </body>
+</test>

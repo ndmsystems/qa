@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<test name="interface description .No without description. Negative" groups="mobile">
+  <setup>
+    <request>
+      <command name="interface">
+        <name>PPPoE2</name>
+      </command>
+    </request>
+  </setup>
+  <body>
+    <packet>
+      <request><command name="interface description">
+        <name>PPPoE2</name>
+        <no>no</no>
+      </command>
+        <assert type="tag" name="error" exists="false" />
+        <assert type="tag" name="message" />
+      </request>
+    </packet>
+  </body>
+  <teardown>
+    <request>
+      <command name="interface">
+        <name>PPPoE2</name>
+        <no>no</no>
+      </command>
+    </request>
+  </teardown>
+</test>

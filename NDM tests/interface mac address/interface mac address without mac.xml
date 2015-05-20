@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<test name="interface mac address. Without mac. Positive" groups="mobile">
+  <body>
+    <packet>
+      <request><command name="interface mac address">
+        <name>ISP</name>
+        </command>
+        <assert type="tag" name="error" />
+      </request>
+    </packet>
+  </body>
+</test>

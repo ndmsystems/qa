@@ -10,9 +10,9 @@
       </request>
       <request>
         <command name="show easyconfig status"></command>
-      <assert type="tag" value="easyconfig" />
-      <assert type="tag" value="checked" />
-      <assert type="tag" value="gateway" />
+      <assert type="tag" name="easyconfig" />
+      <assert type="tag" name="checked" />
+      <assert type="tag" name="gateway" />
         <assert type="xpath" path="//host/name" value="google.com" />
       </request>
     </packet>
