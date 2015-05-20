@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<test name="interface port trunk" groups="mobile">
+  <body>
+    <packet>
+      <request><command name="interface port trunk">
+        <name>Switch0</name>
+        <port>2</port>
+        <vid type="integer">2</vid>
+      </command>
+        <assert type="tag" name="error" exists="false" />
+      </request>
+    </packet>
+  </body>
+</test>
+
+

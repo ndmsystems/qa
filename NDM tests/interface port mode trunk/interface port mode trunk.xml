@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<test name="interface port mode trunk. Full. Positive" groups="mobile">
+  <body>
+    <packet>
+      <request>
+        <command name="interface port mode trunk">
+        <name>Switch0</name>
+        <port>4</port>
+        </command>
+        <assert type="tag" name="error" exists="false" />
+        <assert type="tag" name="meaasge" value="trunk mode enabled" />
+      </request>
+    </packet>
+  </body>
+  <teardown><packet><request><command name="interface port mode trunk">
+    <name>Switch0</name>
+    <port>4</port>
+    <no>no</no>
+  </command></request></packet></teardown>
+</test>
+
+

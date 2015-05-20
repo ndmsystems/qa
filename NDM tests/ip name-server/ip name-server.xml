@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<test name="ip name-server. Full. Positive" groups="mobile">
+  <body>
+    <packet>
+      <request><command name="ip name-server">
+        <address>192.168.1.33</address>
+        <domain>some</domain>
+        <interface>ISP</interface>
+        </command>
+        <assert type="tag" name="argument" value="192.168.1.33" />
+        <assert type="tag" name="argument" value="some" />
+        <assert type="tag" name="argument" value="ISP" />
+        <assert type="tag" name="error" exists="false" />
+        <assert type="tag" name="message" value="added name server *, domain *, interface *" />
+      </request>
+    </packet>
+  </body>
+</test>

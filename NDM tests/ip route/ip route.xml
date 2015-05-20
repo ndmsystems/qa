@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<test name="ip route. Full. Positive" groups="mobile">
+  <body>
+    <packet>
+      <request><command name="ip route">
+        <gateway>0.0.0.0</gateway>
+        <interface>ISP</interface>
+        <default>1</default>
+        <name>ISP</name></command>
+        <response>
+          <message code="5046275" ident="Network::RoutingTable" source="">
+            added static route: */* via *
+            <argument>0.0.0.0</argument>
+            <argument>0</argument>
+            <argument>ISP</argument>
+          </message>
+        </response>
+      </request>
+    </packet>
+  </body>
+
+</test>

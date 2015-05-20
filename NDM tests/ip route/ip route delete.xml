@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<test name="ip route. Delete. Negative" groups="mobile">
+  <setup>
+    <request><command name="ip route">
+      <gateway>0.0.0.0</gateway>
+      <interface>ISP</interface>
+      <default>1</default>
+      <name>ISP</name></command></request>
+  </setup>
+  <body>
+    <packet>
+      <request>
+      <command name="ip route">
+        <default>1</default>
+        <no>no</no>
+        <interface>ISP</interface>
+      </command>
+      <assert type="tag" name="error" exist="false" />
+      </request>
+    </packet>
+  </body>
+</test>

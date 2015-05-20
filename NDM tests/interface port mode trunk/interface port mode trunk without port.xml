@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<test name="interface port mode trunk without port" groups="mobile">
+  <body>
+    <packet>
+      <request><command name="interface port mode trunk">
+        <name>Switch0</name>
+      </command>
+        <assert type="error" code="7471107" />
+      </request>
+      <request>
+      </request>
+    </packet>
+  </body>
+</test>
+
+

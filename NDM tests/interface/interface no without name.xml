@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<test name="interface. Without name. Negative" groups="mobile">
+  <setup>
+    <packet>
+      <request id="0">
+        <command name="interface">
+          <name>UsbModem1</name>
+        </command>
+      </request>
+    </packet>
+  </setup>
+  <body>
+    <packet>
+      <request><command name="interface">
+        <no>no</no>
+      </command>
+        <assert type="error" code="7471107" />
+      </request>
+    </packet>
+  </body>
+</test>

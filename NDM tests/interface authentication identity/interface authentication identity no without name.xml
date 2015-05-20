@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<test name="interface authentication identity. Without name. Negative" groups="mobile">
+  <body>
+    <packet>
+      <request><command name="interface authentication identity">
+        <no>no</no>
+        <identity>login</identity>
+      </command>
+        <assert type="error" code="7471107" />
+      </request>
+    </packet>
+  </body>
+</test>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<test name="ip route. Blank host. Negative" groups="mobile">
+  <body>
+    <packet>
+      <request>
+      <command name="ip route">
+        <default>1</default>
+        <host></host>
+        <gateway></gateway>
+        <no>no</no>
+        <name></name>
+        <mask></mask>
+        <interface>ISP</interface>
+      </command>
+      <assert type="xpath" path="//error[@source='host']" value="invalid argument" />
+      </request>
+    </packet>
+  </body>
+</test>

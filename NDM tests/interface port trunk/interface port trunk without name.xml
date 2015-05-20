@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<test name="interface port trunk without name" groups="mobile">
+  <body>
+    <packet>
+      <request><command name="interface port trunk">
+        <port>2</port>
+        <vid type="integer">2</vid>
+      </command>
+        <assert type="error" code="7471107" />
+      </request>
+      <request>
+      </request>
+    </packet>
+  </body>
+</test>
+
+

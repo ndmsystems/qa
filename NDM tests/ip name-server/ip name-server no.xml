@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<test name="ip name-server.Full. Positive" groups="mobile">
+  <setup>
+    <request>
+      <command name="ip name-server">
+        <address>192.168.1.33</address>
+        <domain>some</domain>
+        <interface>ISP</interface>
+      </command>
+    </request>
+  </setup>
+  <body>
+    <packet>
+      <request><command name="ip name-server">
+        <address>192.168.1.33</address>
+        <domain>some</domain>
+        <interface>ISP</interface>
+        <no>no</no>
+        </command>
+        <assert type="tag" name="error" exists="false" />
+      </request>
+    </packet>
+  </body>
+</test>

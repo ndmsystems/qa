@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<test name="show interface vlan with blank name" groups="mobile">
+  <body>
+    <packet>
+      <request><command name="show interface"><name></name></command>
+        <assert  type="error" code="6553608" />
+        <assert type="tag" name="error" value="unable to find * in * container" />
+      </request>
+    </packet>
+  </body>
+</test>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<test name="show interface vlan all" groups="mobile">
+  <body>
+    <packet>
+      <request><command name="show interface vlan"></command>
+        <assert type="tag" name="error" exists="false" />
+      </request>
+    </packet>
+  </body>
+</test>

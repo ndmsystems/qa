@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<test name="show voip no voip" groups="mobile">
+  <body>
+    <packet>
+      <request><command name="show voip"></command>
+        <assert  type="error" code="7471105" />
+        <assert type="tag" name="error" value="no such command: .*" />
+      </request>
+    </packet>
+  </body>
+</test>

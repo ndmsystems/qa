@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<test name="interface. Full. Positive" groups="mobile">
+  <body>
+    <packet>
+      <request><command name="interface">
+        <name>UsbModem1</name>
+      </command>
+        <assert type="tag" name="argument" value="UsbModem1" />
+        <assert type="tag" name="error" exists="false" />
+        <assert type="tag" name="message" value="created interface" />
+      </request>
+    </packet>
+  </body>
+</test>
