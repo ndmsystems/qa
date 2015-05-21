@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<test name="interface ip address dhcp. Without name. Negative" groups="mobile">
+<test name="interface ip address dhcp. Without hostname. Negative" groups="mobile">
   <body>
     <packet>
       <request><command name="interface ip address dhcp">

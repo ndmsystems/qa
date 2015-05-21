@@ -3,7 +3,7 @@
   <body>
     <packet>
       <request><command name="easyconfig check period">
-        <period>15</period>
+        <period type="Integer">15</period>
       </command>
         <assert type="tag" name="message" value="a new check period set to .* seconds" />
         <assert type="tag" name="argument" value="15" />

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<test name="voip param Without value. Positive" groups="mobile">
+  <environment>
+    <targets>ina_ra</targets>
+  </environment>
+  <body>
+    <packet>
+      <request><command name="voip param">
+        <name>lineenable0</name>
+        <no>no</no>
+      </command>
+        <assert type="tag" name="error" exists="false" />
+      </request>
+    </packet>
+  </body>
+</test>

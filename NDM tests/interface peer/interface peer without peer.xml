@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<test name="interface ip address dhcp. Full. Positive" groups="mobile">
+<test name="interface peer. Without interface. Negative" groups="mobile">
   <setup>
     <request>
       <command name="interface">
@@ -9,12 +9,10 @@
   </setup>
   <body>
     <packet>
-      <request><command name="interface ip address dhcp">
-        <hostname>test-123</hostname>
+      <request><command name="interface peer">
         <name>PPPoE</name>
         </command>
-        <assert type="tag" name="error" exists="false" />
-        <assert type="tag" name="message" />
+        <assert type="tag" name="error" />
       </request>
     </packet>
   </body>

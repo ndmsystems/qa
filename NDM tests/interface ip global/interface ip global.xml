@@ -3,7 +3,7 @@
   <body>
     <packet>
       <request><command name="interface ip global">
-        <priority>700</priority>
+        <priority type="Integer">700</priority>
         <name>ISP</name>
         </command>
         <assert type="tag" name="error" exists="false" />

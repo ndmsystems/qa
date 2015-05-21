@@ -3,7 +3,7 @@
   <body>
     <packet>
       <request><command name="interface ip address dhcp">
-        <host>test-123</host>
+        <hostname>test-123</hostname>
         </command>
         <assert type="tag" name="error" />
       </request>

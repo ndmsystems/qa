@@ -3,7 +3,7 @@
   <body>
     <packet>
       <request><command name="easyconfig check max-fails">
-        <count>2</count>
+        <count type="Integer">2</count>
       </command>
         <assert type="tag" name="message" value="a new maximum fail count set to *" />
         <assert type="tag" name="argument" value="2" />
