@@ -1,5 +1,8 @@
 <?xml version="1.0"?>
 <test name="show voip" groups="mobile">
+  <environment>
+    <targets>kl_rс</targets>
+  </environment>
   <body>
     <packet>
       <request><command name="show voip"></command>

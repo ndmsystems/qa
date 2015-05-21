@@ -11,7 +11,6 @@
     <packet>
       <request><command name="interface modem connect">
         <phone>#234</phone>
-        <dial>1</dial>
         <string>somestring</string>
         <name>UsbModem2</name>
         <no>no</no>

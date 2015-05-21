@@ -17,4 +17,11 @@
       </request>
     </packet>
   </body>
+  <teardown>
+    <request><command name="easyconfig check host">
+      <address>google.com</address>
+      <no>no</no>
+    </command>
+    </request>
+  </teardown>
 </test>

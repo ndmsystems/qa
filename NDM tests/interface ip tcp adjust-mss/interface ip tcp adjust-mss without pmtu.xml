@@ -1,18 +1,17 @@
 <?xml version="1.0"?>
-<test name="interface modem connect. Without dial. Positive" groups="mobile">
+<test name="interface ip tcp adjust-mss. Without pmtu. Positive" groups="mobile">
   <setup>
     <request>
       <command name="interface">
-        <name>UsbModem2</name>
+        <name>PPPoE4</name>
       </command>
     </request>
   </setup>
   <body>
     <packet>
-      <request><command name="interface modem connect">
-        <phone>#234</phone>
-        <string>somestring</string>
-        <name>UsbModem2</name>
+      <request><command name="interface ip tcp adjust-mss">
+        <mss type="Integer">2</mss>
+        <name>PPPoE4</name>
       </command>
         <assert type="tag" name="error" exists="false" />
         <assert type="tag" name="message" />
@@ -22,7 +21,7 @@
   <teardown>
     <request>
       <command name="interface">
-        <name>UsbModem2</name>
+        <name>PPPoE4</name>
         <no>no</no>
       </command>
     </request>

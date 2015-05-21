@@ -10,7 +10,6 @@
   <body>
     <packet>
       <request><command name="interface modem connect">
-        <dial>1</dial>
         <string>somestring</string>
         <name>UsbModem2</name>
       </command>

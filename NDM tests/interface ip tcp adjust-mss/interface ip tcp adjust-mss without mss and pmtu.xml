@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
-<test name="interface modem connect. Without string and phone. Negative" groups="mobile">
+<test name="interface ip tcp adjust-mss. Without string and phone. Negative" groups="mobile">
   <setup>
     <request>
       <command name="interface">
-        <name>UsbModem2</name>
+        <name>PPPoE4</name>
       </command>
     </request>
   </setup>
   <body>
     <packet>
-      <request><command name="interface modem connect">
+      <request><command name="interface ip tcp adjust-mss">
         <name>UsbModem2</name>
       </command>
         <assert type="tag" name="error" />
@@ -20,7 +20,7 @@
   <teardown>
     <request>
       <command name="interface">
-        <name>UsbModem2</name>
+        <name>PPPoE4</name>
         <no>no</no>
       </command>
     </request>

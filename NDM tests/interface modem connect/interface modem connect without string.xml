@@ -11,7 +11,6 @@
     <packet>
       <request><command name="interface modem connect">
         <phone>#234</phone>
-        <dial>1</dial>
         <name>UsbModem2</name>
       </command>
         <assert type="tag" name="error" exists="false" />
