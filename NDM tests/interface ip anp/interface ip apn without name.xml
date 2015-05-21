@@ -1,25 +1,25 @@
 <?xml version="1.0"?>
-<test name="interface authentication. Full. Positive" groups="mobile">
+<test name="interface ip apn. Without name. Negative" groups="mobile">
   <setup>
     <request>
       <command name="interface">
-        <name>PPPoE2</name>
+        <name>UsbModem2</name>
       </command>
     </request>
   </setup>
   <body>
     <packet>
-      <request><command name="interface authentication">
-        <name>PPoE3</name>
+      <request><command name="interface ip apn">
+        <apn>3G_modem</apn>
       </command>
-        <assert type="tag" name="error" exists="false" />
+        <assert type="tag" name="error"/>
       </request>
     </packet>
   </body>
   <teardown>
     <request>
       <command name="interface">
-        <name>PPPoE2</name>
+        <name>UsbModem2</name>
         <no>no</no>
       </command>
     </request>

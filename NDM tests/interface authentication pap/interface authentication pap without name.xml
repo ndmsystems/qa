@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<test name="interface authentication pap. Without name. Negative" groups="mobile">
+  <body>
+    <packet>
+      <request><command name="interface authentication pap">
+      </command>
+        <assert type="error" code="7471107" />
+      </request>
+    </packet>
+  </body>
+</test>

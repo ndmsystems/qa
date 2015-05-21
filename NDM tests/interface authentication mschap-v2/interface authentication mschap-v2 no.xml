@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<test name="interface authentication. Full. Positive" groups="mobile">
+<test name="interface authentication mschap-v2. Full. Positive" groups="mobile">
   <setup>
     <packet>
       <request id="0">
@@ -11,7 +11,7 @@
   </setup>
   <body>
     <packet>
-      <request><command name="interface authentication">
+      <request><command name="interface authentication mschap-v2">
         <name>PPPoE3</name>
         <no>no</no>
       </command>
