@@ -6,7 +6,7 @@
         <priority type="Integer">700</priority>
         <no>no</no>
         </command>
-        <assert type="tag" name="error" />
+        <assert type="tag" name="error" exist="true" />
       </request>
     </packet>
   </body>

@@ -14,7 +14,7 @@
         <name>PPPoE2</name>
         <no>no</no>
       </command>
-        <assert type="tag" name="error" />
+        <assert type="tag" name="error" exists="false" />
       </request>
     </packet>
   </body>

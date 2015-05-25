@@ -5,7 +5,7 @@
       <request><command name="interface mac address">
         <mac>00:1e:e5:41:18:42</mac>
         </command>
-        <assert type="tag" name="error" />
+        <assert type="tag" name="error" exist="true" />
       </request>
     </packet>
   </body>

@@ -6,7 +6,7 @@
         <interface>ISP</interface>
         <no>no</no>
         </command>
-        <assert type="tag" name="error" />
+        <assert type="tag" name="error" exist="true" />
       </request>
     </packet>
   </body>

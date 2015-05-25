@@ -12,7 +12,7 @@
         <address>google.com</address>
         <no>no</no>
       </command>
-        <assert type="tag" name="message" value=".* name removed"/>
+        <assert type="tag" name="message" value="* name removed"/>
       </request>
       <request>
         <command name="show easyconfig status"></command>

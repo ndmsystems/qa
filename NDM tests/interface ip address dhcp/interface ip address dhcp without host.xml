@@ -5,7 +5,7 @@
       <request><command name="interface ip address dhcp">
         <name>Switch0</name>
         </command>
-        <assert type="tag" name="error" />
+        <assert type="tag" name="error" exist="true" />
       </request>
     </packet>
   </body>

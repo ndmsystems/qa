@@ -11,7 +11,7 @@
     <packet>
       <request><command name="interface connect">
         <interface>ISP</interface>
-        <name>PPPoE</name>
+        <name>PPPoE2</name>
         <no>no</no>
         </command>
         <assert type="tag" name="error" exists="false" />

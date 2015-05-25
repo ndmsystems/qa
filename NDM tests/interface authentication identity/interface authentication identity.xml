@@ -13,9 +13,9 @@
         <name>PPPoE2</name>
         <identity>login</identity>
       </command>
-        <assert type="tag" name="message" value="done" />
+        <assert type="xpath" path="//message[text()='done']"/>
         <assert type="tag" name="error" exists="false" />
-        <assert type="tag" name="message" value="Identity saved." />
+        <assert type="xpath" path="//message[text()='Identity saved.']" />
       </request>
     </packet>
   </body>

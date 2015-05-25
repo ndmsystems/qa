@@ -5,7 +5,7 @@
       <request><command name="interface mac address">
         <name>ISP</name>
         </command>
-        <assert type="tag" name="error" />
+        <assert type="tag" name="error" exist="true" />
       </request>
     </packet>
   </body>
