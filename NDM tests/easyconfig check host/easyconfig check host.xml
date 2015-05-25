@@ -6,7 +6,6 @@
         <address >google.com</address>
       </command>
         <assert type="tag" name="message" value=".* name added"/>
-        <assert type="tag" name="argument" value="google.com"/>
       </request>
       <request>
         <command name="show easyconfig status"></command>

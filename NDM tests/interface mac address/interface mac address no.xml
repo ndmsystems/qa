@@ -4,7 +4,6 @@
     <packet>
       <request><command name="interface mac address">
         <mac>00:1e:e5:41:18:42</mac>
-        <domain>some</domain>
         <name>ISP</name>
         <no>no</no>
         </command>

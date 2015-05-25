@@ -13,7 +13,6 @@
         <no>no</no>
       </command>
         <assert type="tag" name="message" value=".* name removed"/>
-        <assert type="tag" name="argument" value="google.com"/>
       </request>
       <request>
         <command name="show easyconfig status"></command>

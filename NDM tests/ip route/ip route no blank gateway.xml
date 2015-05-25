@@ -7,7 +7,6 @@
         <default>1</default>
         <gateway></gateway>
         <no>no</no>
-        <name></name>
         <mask></mask>
         <interface>ISP</interface>
       </command>

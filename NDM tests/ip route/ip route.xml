@@ -5,8 +5,7 @@
       <request><command name="ip route">
         <gateway>0.0.0.0</gateway>
         <interface>ISP</interface>
-        <default>1</default>
-        <name>ISP</name></command>
+        <default>1</default></command>
         <response>
           <message code="5046275" ident="Network::RoutingTable" source="">
             added static route: */* via *

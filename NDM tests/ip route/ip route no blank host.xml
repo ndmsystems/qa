@@ -8,7 +8,6 @@
         <host></host>
         <gateway></gateway>
         <no>no</no>
-        <name></name>
         <mask></mask>
         <interface>ISP</interface>
       </command>

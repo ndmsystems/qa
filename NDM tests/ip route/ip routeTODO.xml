@@ -5,7 +5,7 @@
     <gateway>0.0.0.0</gateway>
     <interface>ISP</interface>
     <default>1</default>
-    <name>ISP</name></command></request>
+    </command></request>
   </setup>
   <body>
     <packet>
