@@ -12,14 +12,14 @@
         <address>google.com</address>
         <no>no</no>
       </command>
-        <assert type="tag" name="message" value="* name removed"/>
+        <assert type="tag" name="message" value=".* name removed"/>
       </request>
       <request>
         <command name="show easyconfig status"></command>
       <assert type="tag" name="easyconfig" />
       <assert type="tag" name="checked" />
       <assert type="tag" name="gateway" />
-        <assert type="xpath" path="//host/name" value="google.com" exists="false" />
+        <assert type="xpath" path="//host/name[text()='google.com']" exists="false" />
       </request>
     </packet>
   </body>

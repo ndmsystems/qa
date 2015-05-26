@@ -5,7 +5,7 @@
       <request><command name="interface connect">
         <interface>ISP</interface>
         </command>
-        <assert type="tag" name="error" exist="true" />
+        <assert type="tag" name="error" />
       </request>
     </packet>
   </body>

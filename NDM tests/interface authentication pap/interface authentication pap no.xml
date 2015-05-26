@@ -16,7 +16,6 @@
         <no>no</no>
       </command>
         <assert type="tag" name="error" exists="false" />
-        <assert type="tag" name="message" value="* authentication disabled." />
       </request>
     </packet>
   </body>

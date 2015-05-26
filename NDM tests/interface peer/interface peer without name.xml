@@ -5,7 +5,7 @@
       <request><command name="interface peer">
         <peer>vpn.dianet.info</peer>
         </command>
-        <assert type="tag" name="error" exist="true" />
+        <assert type="error" />
       </request>
     </packet>
   </body>

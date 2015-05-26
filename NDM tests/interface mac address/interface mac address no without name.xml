@@ -6,7 +6,7 @@
         <mac>00:1e:e5:41:18:42</mac>
         <no>no</no>
         </command>
-        <assert type="tag" name="error" exist="true" />
+        <assert type="error" />
       </request>
     </packet>
   </body>

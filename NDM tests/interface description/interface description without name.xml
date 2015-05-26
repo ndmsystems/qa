@@ -12,7 +12,7 @@
       <request><command name="interface description">
         <description>description</description>
       </command>
-        <assert type="tag" name="error" exist="true" />
+        <assert type="error" />
       </request>
     </packet>
   </body>
