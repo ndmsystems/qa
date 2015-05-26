@@ -12,7 +12,7 @@
       <request><command name="interface connect">
         <name>PPPoE2</name>
         </command>
-        <assert type="tag" name="error" />
+        <assert type="error" />
       </request>
     </packet>
   </body>

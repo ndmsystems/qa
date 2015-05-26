@@ -13,7 +13,7 @@
         <phone>#234</phone>
         <string>somestring</string>
       </command>
-        <assert type="tag" name="error"/>
+        <assert type="error" />
       </request>
     </packet>
   </body>

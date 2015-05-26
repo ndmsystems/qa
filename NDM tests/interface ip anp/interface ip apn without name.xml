@@ -12,7 +12,7 @@
       <request><command name="interface ip apn">
         <apn>3G_modem</apn>
       </command>
-        <assert type="tag" name="error"/>
+        <assert type="error" />
       </request>
     </packet>
   </body>
