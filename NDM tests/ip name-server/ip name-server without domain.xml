@@ -10,7 +10,7 @@
         <assert type="tag" name="argument" value="(default)" />
         <assert type="tag" name="argument" value="ISP" />
         <assert type="tag" name="error" exists="false" />
-        <assert type="tag" name="message" value="added name server *, domain *, interface *" />
+        <assert type="tag" name="message" value="added name server .*, domain .*, interface .*" />
       </request>
     </packet>
   </body>

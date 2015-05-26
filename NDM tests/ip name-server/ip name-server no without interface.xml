@@ -15,7 +15,7 @@
         <address>192.168.1.33</address>
         <no>no</no>
         </command>
-        <assert type="tag" name="error" exists="false" />
+        <assert type="error" />
       </request>
     </packet>
   </body>

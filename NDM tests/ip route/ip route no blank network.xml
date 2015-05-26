@@ -12,7 +12,7 @@
         <interface>ISP</interface>
         <network></network>
       </command>
-      <assert type="xpath" path="//error[@source='network']" value="invalid argument" />
+      <assert type="xpath" path="//error[@source='network']" />
       </request>
     </packet>
   </body>

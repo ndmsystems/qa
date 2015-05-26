@@ -11,7 +11,7 @@
     <packet>
       <request><command name="interface peer">
         <peer>vpn.dianet.info</peer>
-        <name>PPPoE</name>
+        <name>PPPoE2</name>
         </command>
         <assert type="tag" name="error" exists="false" />
         <assert type="tag" name="message" />

@@ -11,7 +11,7 @@
         <mask></mask>
         <interface>ISP</interface>
       </command>
-      <assert type="xpath" path="//error[@source='host']" value="invalid argument" />
+      <assert type="xpath" path="//error[@source='host']" />
       </request>
     </packet>
   </body>

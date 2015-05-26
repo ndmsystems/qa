@@ -3,8 +3,8 @@
   <body>
     <packet>
       <request><command name="show interface"><name></name></command>
-        <assert  type="error" code="6553609" />
-        <assert type="tag" name="error" value="unable to find * in * container" />
+        <assert  type="error" code="6553608" />
+        <assert type="tag" name="error" value="unable to find .* in .* container" />
       </request>
     </packet>
   </body>

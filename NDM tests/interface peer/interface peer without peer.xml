@@ -10,7 +10,7 @@
   <body>
     <packet>
       <request><command name="interface peer">
-        <name>PPPoE</name>
+        <name>PPPoE2</name>
         </command>
         <assert type="error" />
       </request>

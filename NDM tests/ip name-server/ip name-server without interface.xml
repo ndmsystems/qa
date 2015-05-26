@@ -8,7 +8,7 @@
         <assert type="tag" name="argument" value="192.168.1.33" />
         <assert type="tag" name="argument" value="(default)" />
         <assert type="tag" name="error" exists="false" />
-        <assert type="tag" name="message" value="added name server *, domain *" />
+        <assert type="tag" name="message" value="added name server .*, domain .*" />
       </request>
     </packet>
   </body>
