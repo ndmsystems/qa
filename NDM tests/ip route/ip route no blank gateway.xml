@@ -10,6 +10,7 @@
         <mask></mask>
         <interface>ISP</interface>
       </command>
+        <assert type="error" />
       <assert type="xpath" path="//error[@source='gateway']" />
       </request>
     </packet>

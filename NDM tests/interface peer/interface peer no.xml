@@ -6,6 +6,7 @@
         <name>PPPoE2</name>
       </command>
     </request>
+
   </setup>
   <body>
     <packet>

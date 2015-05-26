@@ -7,7 +7,6 @@
         <packet>
           <request><command name="show interface vlan"><name>Switch0</name></command>
             <assert type="tag" name="vlan" />
-            <assert type="tag" name="port"/>
             <assert type="xpath" path="//vlan/id" />
           </request>
         </packet>

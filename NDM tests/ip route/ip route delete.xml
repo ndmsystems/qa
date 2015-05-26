@@ -14,7 +14,7 @@
         <no>no</no>
         <interface>ISP</interface>
       </command>
-      <assert type="tag" name="error" exist="false" />
+      <assert type="tag" name="error" exists="false" />
       </request>
     </packet>
   </body>

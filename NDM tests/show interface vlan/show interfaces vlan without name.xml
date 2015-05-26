@@ -3,7 +3,7 @@
   <body>
     <packet>
       <request><command name="show interface vlan"></command>
-        <assert type="tag" name="error" exists="false" />
+        <assert type="error" />
       </request>
     </packet>
   </body>

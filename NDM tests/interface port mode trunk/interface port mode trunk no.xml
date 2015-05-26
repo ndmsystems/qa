@@ -8,7 +8,7 @@
         <no>no</no>
       </command>
         <assert type="tag" name="error" exists="false" />
-        <assert type="tag" name="meaasge" />
+        <assert type="tag" name="message" />
       </request>
       <request>
       </request>

@@ -12,6 +12,7 @@
         <interface>ISP</interface>
         <network></network>
       </command>
+        <assert type="error" />
       <assert type="xpath" path="//error[@source='network']" />
       </request>
     </packet>
