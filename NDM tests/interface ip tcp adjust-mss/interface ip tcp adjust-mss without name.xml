@@ -11,7 +11,7 @@
     <packet>
       <request><command name="interface ip tcp adjust-mss">
         <mss type="Integer">2</mss>
-        <pmtu>1</pmtu>
+        <pmtu type="flag">1</pmtu>
       </command>
         <assert type="error" />
       </request>

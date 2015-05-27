@@ -10,7 +10,7 @@
   <body>
     <packet>
       <request><command name="interface ip tcp adjust-mss">
-        <pmtu>1</pmtu>
+        <pmtu type="flag">1</pmtu>
         <name>PPPoE4</name>
         </command>
         <assert type="tag" name="error" exists="false" />

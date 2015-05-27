@@ -4,7 +4,7 @@
     <request><command name="ip route">
       <gateway>0.0.0.0</gateway>
       <interface>ISP</interface>
-      <default>1</default></command></request>
+      <default type="flag">1</default></command></request>
   </setup>
   <body>
     <packet>
