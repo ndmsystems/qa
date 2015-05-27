@@ -17,5 +17,5 @@
       </request>
     </packet>
   </body>
-  <teardown><request><command name="ip route"><default>1</default><no>no</no><mask></mask><interface>ISP</interface></command></request></teardown>
+  <teardown><request><command name="ip route"><default type="flag">1</default><no>no</no><mask></mask><interface>ISP</interface></command></request></teardown>
 </test>
