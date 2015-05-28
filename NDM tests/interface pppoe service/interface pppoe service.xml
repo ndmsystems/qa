@@ -12,7 +12,7 @@
       <request><command name="interface pppoe service">
         <name>PPPoE5</name>
       </command>
-        <assert type="tag" name="message" value="Interface enabled." />
+        <assert type="tag" name="error" exists="false" />
       </request>
     </packet>
   </body>
@@ -20,6 +20,7 @@
     <request>
       <command name="interface">
         <name>PPPoE5</name>
+        <no>no</no>
       </command>
     </request>
   </teardown>

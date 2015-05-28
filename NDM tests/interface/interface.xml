@@ -3,11 +3,10 @@
   <body>
     <packet>
       <request><command name="interface">
-        <name>UsbModem1</name>
+        <name>UsbModem7</name>
       </command>
-        <assert type="tag" name="argument" value="UsbModem1" />
+        <assert type="tag" name="argument" value="UsbModem7" />
         <assert type="tag" name="error" exists="false" />
-        <assert type="tag" name="message" value="created interface" />
       </request>
     </packet>
   </body>
