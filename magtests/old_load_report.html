@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="median.js"></script>
+    <script type="text/javascript" src="avg.js"></script>
+    <script type="text/javascript" src="users.js"></script>
+    <script type="text/javascript">
+      google.load('visualization', '1.1', {packages: ['corechart', 'imagelinechart']});
+    </script>
+    <script type="text/javascript">
+    function drawVisualization() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Date');
+        data.addColumn('number', 'Users');
+        data.addColumn('number', 'Median');
+        if (typeof(avgStats) != "undefined") {
+            data.addColumn('number', 'Avg');
+        }
+        data.addRows(usersStats.length);
+
+        /* 
+        // Sample example
+        data.setValue(0, 0, '2004');
+        data.setValue(0, 1, 1000);
+        data.setValue(0, 2, 400);
+        data.setValue(1, 0, '2005');
+        data.setValue(1, 1, 1170); // sales for 2005
+        data.setValue(1, 2, 460);
+        data.setValue(2, 0, '2006');
+        data.setValue(2, 1, 860);
+        data.setValue(2, 2, 580);
+        data.setValue(3, 0, '2007');
+        data.setValue(3, 1, 1030);
+        data.setValue(3, 2, 540);
+        */
+
+        var j = 0
+        for (var i in usersStats) {
+            var stat = usersStats[i]
+            data.setValue(j, 0, ""+stat[0]);
+            data.setValue(j, 1, stat[1]);
+            if (typeof(medianStats) != "undefined" && typeof(medianStats["key_"+stat[0]]) != "undefined") {
+                data.setValue(j, 2, medianStats["key_"+stat[0]]);
+            }
+            if (typeof(avgStats) != "undefined" && typeof(avgStats["key_"+stat[0]]) != "undefined") {
+                data.setValue(j, 3, avgStats["key_"+stat[0]]);
+            }
+            j++
+        }
+
+        var chart = new google.visualization.LineChart(document.getElementById('visualization'));
+        chart.draw(data, {width: 1200, height: 800, min: 0, interpolateNulls: true});
+      }
+      google.setOnLoadCallback(drawVisualization);
+
+      //console.log(medianStats)
+      //console.log(usersStats)
+    </script>
+  </head>
+  <body>
+    <div id="visualization" style="width: 1200px; height: 800px;"></div>
+  </body>
+</html>

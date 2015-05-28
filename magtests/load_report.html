@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="median.js"></script>
+    <script type="text/javascript" src="avg.js"></script>
+    <script type="text/javascript" src="users.js"></script>
+    <script type="text/javascript" src="rps.js"></script>
+    <!--<meta http-equiv="refresh" content="1" />-->
+    <script type="text/javascript">
+      google.load('visualization', '1.1', {packages: ['corechart', 'imagelinechart']});
+    </script>
+    <style type="text/css">
+        #minMaxResponses {
+            font-family: Verdana;
+            padding-left: 250px;
+        }
+    </style>
+    <script type="text/javascript">
+    function drawVisualization() {
+        // Min & Max
+        document.getElementById('minMaxResponses').innerHTML = "" +
+        "Min response time: " + responseMin + "ms" +
+        "<br/>" +
+        "Max response time: " + responseMax + "ms" +
+        "<br/>";
+
+        // Graph
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Date');
+        data.addColumn('number', 'Users');
+        data.addColumn('number', 'RPS');
+        data.addColumn('number', 'Median');
+        data.addColumn('number', 'Avg');
+        
+        data.addRows(tsMax - tsMin + 1);
+
+        var j = 0
+        var previousUsersAmount = 0
+        for (var i = tsMin; i <= tsMax; i++) {
+            var iDate = new Date(i*1000)
+            console.log(iDate)
+            data.setValue(j, 0, iDate.getHours() + ":" + iDate.getMinutes() + ":" + iDate.getSeconds()); // ts
+
+            key = "key_" + i
+            if (typeof(usersStats) != "undefined" && typeof(usersStats[key]) != "undefined") {
+                previousUsersAmount = usersStats[key]
+                data.setValue(j, 1, usersStats[key]);
+            } else {
+                data.setValue(j, 1, previousUsersAmount);
+            }
+            if (typeof(rpsStats) != "undefined" && typeof(rpsStats[key]) != "undefined") {
+                data.setValue(j, 2, rpsStats[key]);
+            }
+            if (typeof(medianStats) != "undefined" && typeof(medianStats[key]) != "undefined") {
+                data.setValue(j, 3, medianStats[key]);
+            }
+            if (typeof(avgStats) != "undefined" && typeof(avgStats[key]) != "undefined") {
+                data.setValue(j, 4, avgStats[key]);
+            }
+            j++
+        }
+
+        var chart = new google.visualization.LineChart(document.getElementById('visualization'));
+        chart.draw(data, {width: 2200, height: 800, min: 0, interpolateNulls: true});
+      }
+      google.setOnLoadCallback(drawVisualization);
+
+      //console.log(medianStats)
+      //console.log(usersStats)
+    </script>
+  </head>
+  <body>
+    <div id="minMaxResponses"></div>
+    <div id="visualization"></div>
+  </body>
+</html>
