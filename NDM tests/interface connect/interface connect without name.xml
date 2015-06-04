@@ -3,7 +3,7 @@
   <body>
     <packet>
       <request><command name="interface connect">
-        <interface>ISP</interface>
+        <via>ISP</via>
         </command>
         <assert type="error" />
       </request>

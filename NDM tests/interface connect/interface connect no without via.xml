@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<test name="interface connect .No without interface. Negative" groups="mobile">
+<test name="interface connect .No without via. Negative" groups="mobile">
   <setup>
     <request>
       <command name="interface">

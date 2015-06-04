@@ -10,7 +10,7 @@
   <body>
     <packet>
       <request><command name="interface connect">
-        <interface>ISP</interface>
+        <via>ISP</via>
         <name>L2TP0</name>
         </command>
         <assert type="tag" name="error" exists="false" />

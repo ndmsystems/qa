@@ -4,7 +4,6 @@
     <request>
       <command name="ip name-server">
         <address>192.168.1.33</address>
-        <domain>some</domain>
         <interface>ISP</interface>
       </command>
     </request>
